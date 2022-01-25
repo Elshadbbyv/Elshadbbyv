@@ -18,17 +18,15 @@ public class insertionSort {
 
         }
     }
-    static void printArray(int[] array){
+
+    public static void main(String[] args) {
+        int[] array = {76,34,67,12,89,45,23};
+        insertionSort sorting = new insertionSort();
+        sorting.selectArray(array);
         int a = array.length;
         for (int i = 0; i < a; ++i) {
             System.out.print(array[i]+" ");
         }
         System.out.println();
-    }
-    public static void main(String[] args) {
-        int[] array = {76,34,67,12,89,45,23};
-        insertionSort sorting = new insertionSort();
-        sorting.selectArray(array);
-        printArray(array);
     }
 }
