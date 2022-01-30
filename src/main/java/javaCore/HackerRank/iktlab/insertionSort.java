@@ -1,6 +1,7 @@
 package javaCore.HackerRank.iktlab;
 
 public class insertionSort {
+
     void selectArray(int[] array) {
         int a = array.length;
         for (int i = 1; i < a; i++) {
@@ -9,8 +10,6 @@ public class insertionSort {
             while(k>=0 && array[k]>b){
                 array[k+1]=array[k];
                 k = k-1;
-
-
             }
             array[k+1]=b;
 
@@ -27,6 +26,8 @@ public class insertionSort {
         for (int i = 0; i < a; ++i) {
             System.out.print(array[i]+" ");
         }
+
+
         System.out.println();
     }
 }
